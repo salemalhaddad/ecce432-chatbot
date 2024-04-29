@@ -14,19 +14,20 @@ export default function Header({}: Props) {
   return (
     <header className='sticky top-0 z-[60] bg-background py-8 shadow-sm'>
       <Container className='flex max-w-full items-center justify-between'>
-        <Button role='button' variant='link' onClick={clearMessages}>
+        {/* <Button role='button' variant='link' onClick={clearMessages}>
           <Logo />
-        </Button>
+        </Button> */}
+        <h1 className='text-4xl font-bold text-primary'>AI Textbook Tutor</h1>
         <nav className='flex items-center gap-6'>
           <div className='translate-y-[3px]'>
-            <GitHubButton
+            {/* <GitHubButton
               data-size='large'
               href='https://github.com/intelligentnode/intellichat'
               data-icon='octicon-star'
               aria-label='Star intelligentnode/intellichat on GitHub'
             >
               Star
-            </GitHubButton>
+            </GitHubButton> */}
           </div>
           <SideBar />
         </nav>

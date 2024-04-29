@@ -6,7 +6,7 @@ import {
   getChatResponse,
   getDefaultProviderKey,
 } from '@/lib/intellinode';
-
+export const maxDuration = 10;
 const defaultSystemMessage =
   'You are a helpful assistant. Format response in Markdown where needed.';
 const defaultProvider = 'openai';
@@ -97,4 +97,3 @@ export async function POST(req: Request) {
   }
 }
 
-export const maxDuration = 180;
